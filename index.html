@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title>welcome to my website</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            .banner{
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(go.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar{
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo{
+                width: 100px;
+                cursor: pointer;
+            }
+            .navbar ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            .navbar ul li::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #009688;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transition: 0.5s;
+            }
+            .navbar ul li:hover::after{
+                width: 100%;
+            }
+            .content{
+                width: 100%;
+                position: absolute;
+                top: 10%;
+                transform: translate(-3%);
+                text-align: center;
+                color: #fff;
+            }
+            .content h1{
+                font-size: 70px;
+                margin-top: 80px;
+            }
+            .content p{
+                margin: 20px auto;
+                font-weight: 100;
+                line-height: 25px;
+            }
+            button{
+                width: 200px;
+                padding: 15px 0;
+                text-align: center;
+                margin: 20px 10px;
+                border-radius: 25px;
+                font-weight: bold;
+                border: 2px solid #009688;
+                background: transparent;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+            }
+            span{
+                background: #009688;
+                height: 100%;
+                width: 0;
+                border-radius: 25px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                transition: 0.5s;
+            }
+            button:hover span{
+                width: 100%;
+            }
+            button:hover{
+                border: none;
+            }
+            .features {
+      padding: 50px;
+      text-align: center;
+      background-color: teal;
+    }
+    .features h2 {
+      margin-bottom: 30px;
+    }
+
+    .features .feature {
+      display: inline-block;
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+<div class="navbar">
+    <img src="logoj.png" class="logo">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<div class="content">
+<h1>The Simplest<br> Way TO Find Property</h1>
+<p>This is the smartest way to find your property.<br>Click on get tarted or see property</p>
+<div>
+    <button type="button"><span></span>Get Started</button>
+    <button type="button"><span></span> See Property</button>
+</div>
+</div>
+        </div>
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature">
+              <h3>Variety of Properties</h3>
+              <p>We offer a wide range of properties to suit every preference and budget.</p>
+            </div>
+            <div class="feature">
+              <h3>Advanced Search</h3>
+              <p>Our search functionality allows you to refine your search based on specific criteria.</p>
+            </div>
+            <div class="feature">
+              <h3>Expert Guidance</h3>
+              <p>Our team of experienced agents is available to provide guidance and support throughout the process.</p>
+            </div>
+          </section>
+        
+          <footer class="footer">
+            <p>&copy; 2023 Your Real Estate Website. All rights reserved.</p>
+          </footer>
+    </body>
+</html>
